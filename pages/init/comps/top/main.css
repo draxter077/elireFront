@@ -1,0 +1,51 @@
+.initTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+.initTopLogo{
+    color: var(--colorGreen);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.initTopSearch{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid var(--colorGreen);
+    padding: 10px 15px;
+    border-radius: 15px;
+    width: 50%;
+    transition: box-shadow var(--transitionTime);
+}
+
+.initTopSearch:hover{
+    box-shadow: 0px 0px 10px 0px var(--colorGreen);
+}
+
+.initTopSearch>input{
+    background: none;
+    color: var(--colorWhite);
+    width: 70%;
+}
+
+.initTopSearch>input::placeholder{
+    color: var(--colorWhite);
+}
+
+.initTopSearch>button{
+    background: var(--colorGreen);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--colorBlue);
+    width: 30%;
+    transition: background var(--transitionTime);
+}
+
+.initTopSearch>button:hover{
+    background: var(--colorWhite);
+}
